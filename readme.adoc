@@ -7,13 +7,19 @@
 
 == before use it
 . create link for shell script into your bin directory
-====
++
 ```sh
-ln /store this code absolution path/.../start_warm.sh /usr/local/bin
+ln /the absolution path.../start_warm.sh /usr/local/bin
 
-ln /store this code absolution path/.../terminate_warm.sh /usr/local/bin
+ln /the absolution path.../terminate_warm.sh /usr/local/bin
 ```
-====
+
+. create link for pm2 into your bin directory
++
+```sh
+ln /the absolution path/.../pm2 /usr/local/bin
+```
+
 [NOTE]
 ====
 Your command needs to be modified to fit your actual situation
@@ -30,4 +36,10 @@ start_warm.sh
 +
 ```sh
 terminate_warm.sh
+```
+
+* list process
++
+```sh
+pm2 list
 ```
