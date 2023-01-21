@@ -1,17 +1,25 @@
 = A software to warm your laptop in winter
 
-== dependencies
+== Dependencies
+make sure you have the following enviroment
+
 * https://nodejs.org/en/[nodeJs]
 
 * https://pm2.io/[pm2]
 
-== before use
+== Before use
 type `pm2` command in your shell if it doesn't work solve it by the method below.
 
-. create link for pm2 into your `bin` directory
+* under macos or linux,you can create soft link for pm2 into your `bin` directory
 +
 ```sh
 ln -s /the absolution path/.../pm2 /usr/local/bin
+```
+
+* under windows,you should install it globally
++
+```sh
+npm install pm2 -g
 ```
 
 [NOTE]
@@ -19,7 +27,7 @@ ln -s /the absolution path/.../pm2 /usr/local/bin
 Your command needs to be modified to fit your actual situation
 ====
 
-== usage
+== Usage
 All commands are under the *project* `bin` directory
 
 * start heating
@@ -40,11 +48,19 @@ All commands are under the *project* `bin` directory
 pm2 list
 ```
 
-== more convenient
-. create link for shell script into your `bin` directory
+== More convenient
+* For macos or linux user
 +
-```sh
+create soft link for shell script into your `bin` directory
++
+----
 ln -s /the absolution path.../heating /usr/local/bin
 
 ln -s /the absolution path.../terminate_heating /usr/local/bin
-```
+----
+
+* For windows user
++
+----
+because windows can not use command 'ln', so I don't know other better methods.
+----
