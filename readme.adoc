@@ -1,66 +1,8 @@
 = A software to warm your laptop in winter
 
-== Dependencies
-make sure you have the following enviroment
-
-* https://nodejs.org/en/[nodeJs]
-
-* https://pm2.io/[pm2]
-
-== Before use
-type `pm2` command in your shell if it doesn't work solve it by the method below.
-
-* under macos or linux,you can create soft link for pm2 into your `bin` directory
-+
-```sh
-ln -s /the absolution path/.../pm2 /usr/local/bin
-```
-
-* under windows,you should install it globally
-+
-```sh
-npm install pm2 -g
-```
-
-[NOTE]
-====
-Your command needs to be modified to fit your actual situation
-====
-
 == Usage
-All commands are under the *project* `bin` directory
-
-* start heating
-+
-```sh
-./heating
-```
-
-* stop heating
-+
-```sh
-./terminate_heating
-```
-
-* list process
-+
-```sh
-pm2 list
-```
-
-== More convenient
-* For macos or linux user
-+
-create soft link for shell script into your `bin` directory
-+
-----
-ln -s /the absolution path.../heating /usr/local/bin
-
-ln -s /the absolution path.../terminate_heating /usr/local/bin
-----
-
-* For windows user
-+
-----
-because windows can not use command 'ln', so I don't know other better methods.
-----
+. enter this directory
+. run command `./heating.sh`
+. enter how many thread do you want
+. then it is heating
+. press any key stop heating
