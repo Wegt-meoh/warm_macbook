@@ -5,4 +5,4 @@
 . run command `./heating.sh`
 . enter how many thread do you want
 . then it is heating
-. press any key stop heating
+. press `ctrl + c` to stop heating
